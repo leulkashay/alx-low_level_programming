@@ -13,7 +13,7 @@ int main(void)
 
 	low = 'a';
 
-	while (low >= 'z')
+	while (low <= 'z')
 	{
 		putchar(low);
 
