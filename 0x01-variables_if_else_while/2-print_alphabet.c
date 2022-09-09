@@ -7,15 +7,19 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char low;
+	low = 'a';
 
-	for (low = 'a'; low <= 'z'; low++)
+	while (low >= 'z')
+	{
 		putchar(low);
-		printf("\n");
-	
-	return (0);
 
+		low++;
+	}
+
+	putchar('\n');
+
+	return (0);
 }
