@@ -9,19 +9,19 @@
  */
 int main(void)
 {
-	char low;
+	char alphabet;
 
-	for (low = 'a'; low <= 'z'; low++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(low);
+		putchar(alphabet);
+	}
+
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+	{
+		putchar(alphabet);
 	}
 
 	putchar('\n');
-
-	for (low = 'A'; low <= 'Z'; low++)
-	{
-		putchar(low);
-	}
 
 	return (0);
 }
