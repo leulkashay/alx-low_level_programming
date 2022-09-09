@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Entry point
@@ -14,7 +15,7 @@ int main(void)
 	{
 		putchar(alpha);
 	}
-	putchar("\n");
+	printf("\n");
 
 	return (0);
 }
