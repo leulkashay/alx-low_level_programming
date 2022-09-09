@@ -5,18 +5,20 @@
 /**
  * main - Entry point
  *
- * Return : Always 0(success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char alpha;
+	char low;
 
-	for(alpha = 'Z'; alpha >= 'a'; alpha--)
+	low = 'z';
+
+	while (low >= 'a')
 	{
-		putchar(alpha);
+		putchar(low);
 	}
-	
-	putchar("\n");
+
+	putchar('\n');
 
 	return (0);
 }
