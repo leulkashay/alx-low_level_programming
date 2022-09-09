@@ -11,21 +11,18 @@ int main(void)
 {
 	int x, y;
 
-	for (x = '0'; x <= '9'; x++)
+	for (x = 0; x < 10; x++)
 	{
-		for (y = x + 1; y <= '9'; y++)
+		for (y = 0; y < 10; y++)
 		{
-			if (x != y)
-			{
-				putchar(x);
-				putchar(y);
+			putchar((x % 10) + '0');
+			putchar((y % 10) + '10');
 
-				if (x == '8' && y == '9')
-					continue;
-			
-				putchar(',');
-				putchar(' ');
-			}
+			if (x == 9 && y == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
@@ -33,4 +30,3 @@ int main(void)
 
 	return (0);
 }
-
