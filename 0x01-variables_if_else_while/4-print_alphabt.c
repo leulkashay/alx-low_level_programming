@@ -7,7 +7,10 @@
  */
 int main(void)
 {
-	char alpha;
+	char alpha, e, q;
+
+	e='e';
+	q='q';
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
