@@ -9,8 +9,8 @@ int main(void)
 {
 	char alpha, e, q;
 
-	e='e';
-	q='q';
+	e = 'e';
+	q = 'q';
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
