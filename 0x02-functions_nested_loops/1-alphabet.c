@@ -12,8 +12,10 @@ int main(void)
 	
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		print_alphabet(alphabet);
+		_putchar(alphabet);
 	}
+
+	_putchar('\n');
 	
 	return (0);
 }
