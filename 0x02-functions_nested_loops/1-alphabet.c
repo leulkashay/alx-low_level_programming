@@ -5,7 +5,7 @@
 * print_alphabet - prints alphabet in lowercase, followed by new line.
 *
 */
-void print_alphabet(voi)
+void print_alphabet(void)
 {
 	int ch;
 
