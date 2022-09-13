@@ -3,7 +3,7 @@
 
 /**
 * _islower - prints 1 or 0 depending on input
-* c - is first parameter
+*@c - first parameter
 *
 * Return: 1 if character is lowercase, 0 otherwise
 */
