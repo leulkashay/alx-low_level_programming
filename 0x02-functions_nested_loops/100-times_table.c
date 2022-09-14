@@ -9,7 +9,7 @@
 void print_times_table(int n)
 {
 	int digit, res, mul;
-
+	
 	if (n <= 15 && n >= 0)
 	{
 		for (digit = 0; digit <= n; digit++)
@@ -22,7 +22,6 @@ void print_times_table(int n)
 				_putchar(' ');
 
 				res = digit * mul;
-
 				if (res <= 99)
 				{
 					_putchar(' ');
