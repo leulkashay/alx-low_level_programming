@@ -10,22 +10,19 @@ void more_numbers(void)
 {
 	int x;
 	int y;
-	
-	for (y = 0; y < 10; y++)
+
+	for (x = 0; x <= 9; x++)
 	{
-		x = 0;
-		
-		while (x <= 14)
+		for (y = 0; y <= 14; y++)
 		{
-			if (x >= 10)
+			if ((y >= 10) && (y <= 14))
 			{
-				_putchar(x / 10 + '0');
+				_putchar((y / 10) + '0');
 			}
 			
-				_putchar(x % 10 + '0');
-			x++;
+			_putchar((y % 10) + '0');
 		}
-		
+
 		_putchar('\n');
 	}
 }
