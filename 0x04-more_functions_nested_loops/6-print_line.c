@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
-* print_line - Print line dependent on the integer n.
-* @n : The number of '_' characters to use
-* Return: Void.
+* print_line -  Write a function that draws a straight line in the terminal
+*
+* @n: this is the entry
+*
 */
 
 void print_line(int n)
 {
-	int c = 0;
+	int count;
 	
-	while ((c <  n) && (n > 0))
+	for (count = 1; n >= 1 && count <= n; count++)
 	{
-		_putchar('_');
-		
-		c++;
+		_putchar(95);
 	}
-
+	
 	_putchar('\n');
 
 }
