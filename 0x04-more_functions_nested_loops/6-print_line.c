@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * print_line -  Write a function that draws a straight line in the terminal
@@ -10,13 +9,14 @@
 
 void print_line(int n)
 {
-	int count;
+	int c = 0;
 	
-	for (count = 1; n >= 1 && count <= n; count++)
+	while ((c <  n) && (n > 0))
 	{
-		_putchar(95);
+		_putchar('_');
+		
+		c++;
 	}
 	
 	_putchar('\n');
-
 }
