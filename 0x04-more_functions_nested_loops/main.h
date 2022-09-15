@@ -1,7 +1,8 @@
 #ifndef MAIN
-
 #define MAIN
-int _putchar(char c);
+
+extern int _putchar(char c);
+extern int _isupper(int c);
 
 #endif
 
