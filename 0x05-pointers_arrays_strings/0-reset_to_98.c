@@ -1,8 +1,9 @@
 #include "main.h"
-#include <stdio.h>
+
 
 /**
-* main - Reset value of variable to 98
+* reset_to_98 - Reset value of variable to 98
+* @n: parameter
 *
 * Return: Noting
 */
