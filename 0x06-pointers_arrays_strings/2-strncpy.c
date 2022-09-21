@@ -1,25 +1,26 @@
 #include "main.h"
 
 /**
-* _strncpy - a function that copies a string.
-* @dest: the variable holds output
-* @src: the variable holds input
-* @n: size of the string
+* *_strncpy - A function that copies astring
+* @dest: pointer parameter
+* @src: pointer parameter
+* @n: pointer to integer
 *
-* Return: dest output string
+* Return: dest pointer output
 */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int ndx;
+	int i;
 
-	for (ndx = 0; ndx < n && src[ndx] != '\0'; ndx++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest[ndx] = src[ndx]'
+		dest[i] = src[i];
 	}
-	for (;ndx < n; ndx++)
+
+	for (; i < n; i++)
 	{
-		dest[ndx] = '\0';
+		dest[i] = '\0';
 	}
 	return (dest);
 }
