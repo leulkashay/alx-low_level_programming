@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 	int ndx = 0;
 	int dest_len = 0;
 
-	while (ndx[ndx++])
+	while (dest[ndx++])
 	{
 		dest_len++;
 	}
