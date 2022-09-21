@@ -20,7 +20,7 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	}
 
-	R = s[i] - s2[i];
-	
-	return (R);
+	Res = s[i] - s2[i];
+
+	return (Res);
 }
