@@ -15,8 +15,8 @@ void print_line1(char *c,int s, int l)
 
 	for (j = 0; j <= 9; j++)
 	{
-		if (j <= 5)
-			printf("%02x", c[l * 10 +j]);
+		if (j <= s)
+			printf("%02x", c[l * 10 + j]);
 		else
 			printf(" ");
 		if (j % 2)
