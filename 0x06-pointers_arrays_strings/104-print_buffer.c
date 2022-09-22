@@ -76,10 +76,10 @@ void print_buffer(char *b, int size)
 			end = (size - start < 10) ? size - start : 10;
 			printf("%08x: ", start);
 			printHexes(b, start, end);
-			rintASCII(b, start, end);
+			printASCII(b, start, end);
 			printf("\n");
 		}
-		}
+	}
 		else
 			printf("\n");
 
