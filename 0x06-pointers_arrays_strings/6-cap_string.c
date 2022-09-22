@@ -1,33 +1,31 @@
-#include "main.h"
+# include "main.h"
 
 /**
-* cap_string - write a function that capitalze a first string 
-* @s: string to captailze
-* Return: capitalze first string
+* cap_string - a function that capitalize all words of a string
+* @str: string
+* Return: string
 */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i;
-
-	i = 1;
-
-	if (s[0] >= 'a' && s[0] <= 'z')
-		s[0] = s[0] - 32;
-	while (s[i] != '\0')
+	int i = 1;
+	
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] = str[0] - 32;
+	while (str[i] != '\0')
 	{
-		if ((s[i - 1] == '' || s[i - 1] == '\t' 
-				|| s[i - 1] == '\n' || s[i - 1] == ',' 
-				|| s[i - 1] == ';' || s[i - 1] == '.' 
-				|| s[i - 1] == '!' || s[i - 1] == '?' 
-				|| s[i - 1] == '"' || s[i - 1] == '(' 
-				|| s[i - 1] == ')' || s[i - 1] == '{' 
-				|| s[i - 1] == '}') 
-				&& (s[i] >= 'a' && s[i] <= 'z'))
+		if ((str[i - 1] == ' ' || str[i - 1] == '\t'
+			|| str[i - 1] == '\n' || str[i - 1] == ','
+			|| str[i - 1] == ';' || str[i - 1] == '.'
+			|| str[i - 1] == '!' || str[i - 1] == '?'
+			|| str[i - 1] == '"' || str[i - 1] == '('
+			|| str[i - 1] == ')' || str[i - 1] == '{'
+			|| str[i - 1] == '}')
+			&& (str[i] >= 'a' && str[i] <= 'z'))
 		{
-			s[i] = s[i] - 32;
+			str[i] = str[i] - 32;
 		}
 		i++;
 	}
-	return (s);
+	return (0);
 }
