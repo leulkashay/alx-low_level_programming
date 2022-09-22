@@ -1,32 +1,34 @@
 #include "main.h"
 
 /**
-* *cap_string - A function that captilaze string
-* @s: pointer parameter
-*
-* Return: *s captial string
+* cap_string - write a function that capitalze a first string 
+* @s: string to captailze
+* Return: capitalze first string
 */
 
 char *cap_string(char *s)
 {
-	int i, j; 
-	
-	char delimeters[] = " \t\n,;.!?\"(){}";
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	i = 0;
+
+	while (s[++i])
 	{
-		if (s[0] >= 97 && s[0] <= 122)
+		while (!(s[i] >= 'a' && s[i] <= 'z'))
 		{
-			s[0] = s[0] - 32;
+			i++;
 		}
-		for (j = 0; delimeters[j] != '\0'; j++)
+		
+		if (s[i - 1] == ' ' || s[i - 1] == '\t' ||
+				s[i - 1] == '\n' || s[i - 1] == ',' ||
+				s[i - 1] == ';' || s[i - 1] == '.' ||
+				s[i - 1] == '!' || s[i - 1] == '?' ||
+				s[i - 1] == '"' || s[i - 1] == '(' ||
+				s[i - 1] == ')' || s[i - 1] == '{' ||
+				s[i - 1] == '}')
 		{
-			if (s[i] == delimeters[j] && s[i + 1] >= 97 && 
-					s[i + 1] <= 122)
-			{
-				s[i + 1] = s[i + 1] - 32;
-			}
+			s[i] -= 32;
 		}
 	}
 	return (s);
-}	
+}
