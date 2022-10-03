@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 	temp = 0;
 
 	if (ac == 0 || av == 0)
-		return (NULL)
+		return (NULL);
 	while (ac--)
 		sum += (len(av[ac]) + 1);
 	new_str = (char *) malloc(sum + 1);
