@@ -4,7 +4,7 @@
 * str_concat - concante two strings
 * @s1: string pointer parameter
 * @s2: string pointer parameter
-* Return: pointer should point to a newly allocated space in memory 
+* Return: pointer should point to a newly allocated space in memory
 */
 
 char *str_concat(char *s1, char *s2)
