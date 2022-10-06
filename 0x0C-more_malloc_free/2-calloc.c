@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	else
 	{
-		return (Null);
+		return (NULL);
 	}
 }
 
