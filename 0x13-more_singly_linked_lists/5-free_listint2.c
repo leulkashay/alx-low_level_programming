@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 
 	if (head != NULL)
 	{
-		unk = *head
+		unk = *head;
 		while ((tmp = unk) != NULL)
 		{
 			unk = unk->next;
