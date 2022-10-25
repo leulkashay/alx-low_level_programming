@@ -21,7 +21,7 @@ listint_t *reverse_listint(listint_t **head)
 		unk = *head;
 		*head = n;
 	}
-	*head = ukn;
+	*head = unk;
 
 	return (*head);
 }
